@@ -1,0 +1,40 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/CardboardBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position -0.8167323639726882 1.375071419806047 2.7338889401919615
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+E-puck {
+  hidden position_0_0 1609.9139985747497
+  hidden position_0_1 1929.3924914886957
+  hidden rotation_1 0 1 0 1.4185599367755741
+  hidden rotation_2 0 -0.9999999999999999 0 5.828583122616966
+  translation -0.817446 1.37449 0.050057
+  rotation 0.0011101118061991675 -0.0008558277836852105 -0.9999990176048087 1.284267416636059
+  controller "my_controller"
+}
+CardboardBox {
+  translation -0.38 0.38 0
+  size 0.75 2.25 0.1
+}
+CardboardBox {
+  translation 0.3 0 0
+  name "cardboard box(1)"
+  size 0.9 1.485 0.1
+}
